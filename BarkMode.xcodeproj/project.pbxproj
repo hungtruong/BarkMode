@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19967A9C22DBCD6200D9A8AA /* BarkMode.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 19967A9B22DBCD6200D9A8AA /* BarkMode.mlmodel */; };
 		19D7B98022DADEAB002F1A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7B97F22DADEAB002F1A35 /* AppDelegate.swift */; };
 		19D7B98222DADEAB002F1A35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7B98122DADEAB002F1A35 /* SceneDelegate.swift */; };
 		19D7B98422DADEAB002F1A35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7B98322DADEAB002F1A35 /* ViewController.swift */; };
 		19D7B98722DADEAB002F1A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D7B98522DADEAB002F1A35 /* Main.storyboard */; };
 		19D7B98922DADEAC002F1A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D7B98822DADEAC002F1A35 /* Assets.xcassets */; };
 		19D7B98C22DADEAC002F1A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D7B98A22DADEAC002F1A35 /* LaunchScreen.storyboard */; };
+		19D7B99B22DAE857002F1A35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D7B99A22DAE857002F1A35 /* AVFoundation.framework */; };
+		19D7B99D22DAF5F1002F1A35 /* SoundAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D7B99C22DAF5F1002F1A35 /* SoundAnalysis.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19967A9B22DBCD6200D9A8AA /* BarkMode.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BarkMode.mlmodel; sourceTree = "<group>"; };
 		19D7B97C22DADEAB002F1A35 /* BarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D7B97F22DADEAB002F1A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D7B98122DADEAB002F1A35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		19D7B98822DADEAC002F1A35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D7B98B22DADEAC002F1A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D7B98D22DADEAC002F1A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D7B99622DAE09F002F1A35 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		19D7B99822DAE589002F1A35 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		19D7B99A22DAE857002F1A35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		19D7B99C22DAF5F1002F1A35 /* SoundAnalysis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SoundAnalysis.framework; path = System/Library/Frameworks/SoundAnalysis.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D7B99D22DAF5F1002F1A35 /* SoundAnalysis.framework in Frameworks */,
+				19D7B99B22DAE857002F1A35 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				19D7B97E22DADEAB002F1A35 /* BarkMode */,
 				19D7B97D22DADEAB002F1A35 /* Products */,
+				19D7B99522DAE09F002F1A35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +67,7 @@
 		19D7B97E22DADEAB002F1A35 /* BarkMode */ = {
 			isa = PBXGroup;
 			children = (
+				19967A9B22DBCD6200D9A8AA /* BarkMode.mlmodel */,
 				19D7B97F22DADEAB002F1A35 /* AppDelegate.swift */,
 				19D7B98122DADEAB002F1A35 /* SceneDelegate.swift */,
 				19D7B98322DADEAB002F1A35 /* ViewController.swift */,
@@ -65,6 +77,17 @@
 				19D7B98D22DADEAC002F1A35 /* Info.plist */,
 			);
 			path = BarkMode;
+			sourceTree = "<group>";
+		};
+		19D7B99522DAE09F002F1A35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D7B99C22DAF5F1002F1A35 /* SoundAnalysis.framework */,
+				19D7B99A22DAE857002F1A35 /* AVFoundation.framework */,
+				19D7B99822DAE589002F1A35 /* AudioToolbox.framework */,
+				19D7B99622DAE09F002F1A35 /* CoreML.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D7B98422DADEAB002F1A35 /* ViewController.swift in Sources */,
+				19967A9C22DBCD6200D9A8AA /* BarkMode.mlmodel in Sources */,
 				19D7B98022DADEAB002F1A35 /* AppDelegate.swift in Sources */,
 				19D7B98222DADEAB002F1A35 /* SceneDelegate.swift in Sources */,
 			);
